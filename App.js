@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Header from './src/components/Header';
 import Albumlist from './src/components/Albumlist';
 import DetailScreen from './src/components/DetailScreen';
+import Bottom from './src/components/Bottom';
 import albumData from "./src/json/album.json";
 
 const Stack = createStackNavigator();
@@ -16,7 +17,7 @@ const App = () => {
 <NavigationContainer >
   <Stack.Navigator>
     
-    <Stack.Screen name="Home" component={Albumlist} options={{
+    <Stack.Screen name="mybook" component={Albumlist} options={{
       headerLeft: () =>  <TouchableOpacity onPress={() => Linking.openURL("https://www.youtube.com/")}>
       <Image style={styles.headdd} source= {require('./src/img/btn_漢堡.png')}/>
       </TouchableOpacity>,
@@ -26,12 +27,13 @@ const App = () => {
       title:"My Book",
       headerTintColor: '#fff',
       headerStyle: { backgroundColor: '#00b49f' },
-
+      
     }}/>
     
     <Stack.Screen name="Detail" component={DetailScreen} />
     
   </Stack.Navigator>
+  <Bottom/>
 </NavigationContainer>
 
 

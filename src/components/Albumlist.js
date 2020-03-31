@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
       fontWeight:'bold',
       marginLeft:15,
       width:230,
-      paddingTop:13
+      paddingTop:13,
     },
     text4:
     {
