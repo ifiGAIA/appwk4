@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,Image, TouchableWithoutFeedbac, TouchableOpacity,Linking,$ } from 'react-native';
+import { StyleSheet, Text, View,Image, TouchableWithoutFeedbac, TouchableOpacity,Linking } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
