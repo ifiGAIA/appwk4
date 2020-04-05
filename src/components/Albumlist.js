@@ -19,6 +19,7 @@ const Albumlist = ({navigation}) => {
     <Text style={styles.text1}>{GEM[0].text1}</Text>
     <Text style={styles.text2}>{GEM[0].text2}</Text>
     <Text style={styles.text3}>{GEM[0].text3}</Text>
+    <View style={styles.lineg}></View>
     <View style={styles.line}></View>
     <Text style={styles.text4}>{GEM[0].text4}</Text>
     </View>
@@ -265,8 +266,18 @@ const styles = StyleSheet.create({
     },
     line:
     {
-      width:204,
+      width:102,
       backgroundColor:'#70b4a1',
+      height:3,
+      marginTop:106.5,
+      marginLeft:24,
+      borderRadius:999,
+      position:"absolute"
+    },
+    lineg:
+    {
+      width:204,
+      backgroundColor:'#c3c3c3',
       height:3,
       marginTop:13,
       marginLeft:24,

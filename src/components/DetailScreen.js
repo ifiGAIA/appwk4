@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     line:
     {
       width:204,
-      backgroundColor:'#70b4a1',
+      backgroundColor:'#c3c3c3',
       height:3,
       marginTop:13,
       marginLeft:24,
