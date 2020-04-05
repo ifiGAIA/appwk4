@@ -133,7 +133,24 @@ const Albumlist = ({navigation}) => {
     />
     </View>
   </View> */}
- 
+ <View style={styles.bottomm}>
+      <View style={styles.bottom}>
+      <TouchableOpacity onPress={() => navigation.navigate("Detail")}>
+      <Image style={styles.bGemph1} source= {require('../img/icon_bottomnav_home.png')}/>
+      <Text style={styles.w1}>Home</Text>
+      </TouchableOpacity>
+      </View>
+      <View style={styles.bottom2}>
+      <Image style={styles.bGemph1} source= {require('../img/icon_bottomnav_mybook_selected.png')}/>
+      <Text style={styles.w2}>My Book</Text>
+      </View>
+      <View style={styles.bottom3}>
+      <Image style={styles.bGemph1} source= {require('../img/icon_bottomnav_favorites.png')}/>
+      <Text style={styles.w1}>Favorites</Text>
+      </View>
+      
+      
+      </View>
   </ScrollView>
  
   );
@@ -266,7 +283,67 @@ const styles = StyleSheet.create({
       borderRadius:999,
       
     },
-    
+    bottomm:
+    {
+      
+      // justifyContent:"center",
+      // alignItems:"center",
+      
+      // width:360,
+      position:"absolute",
+      flexDirection:"row",
+      bottom:-60
+      
+      
+    },
+    bottom:
+    {
+      height:76,
+      width:124,
+      backgroundColor:"#fff",
+      alignItems:"center",
+      justifyContent:"center",
+      borderTopColor:"#d1d1d1",
+      borderTopWidth:2
+    },
+    bottom2:
+    {
+      height:76,
+      width:126,
+      backgroundColor:"#fff",
+      alignItems:"center",
+      justifyContent:"center",
+      borderTopColor:"#d1d1d1",
+      borderTopWidth:2
+    },
+    bottom3:
+    {
+      height:76,
+      width:125,
+      backgroundColor:"#fff",
+      alignItems:"center",
+      justifyContent:"center",
+      borderTopColor:"#d1d1d1",
+      borderTopWidth:2
+    },
+    bGemph1:
+    {
+        width:40,
+        height:40,
+        
+    },
+    w1:
+    {
+        fontSize:14,
+        color:'#717171',
+        fontWeight:'bold',
+    },
+    w2:
+    {
+        fontSize:14,
+        color:'#00b49f',
+        fontWeight:'bold',
+    },
     
     
 });

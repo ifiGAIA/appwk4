@@ -3,6 +3,8 @@ import { StyleSheet, Text, View,Image, TouchableWithoutFeedbac, TouchableOpacity
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { navigationRef } from './RootNavigation';
+
 import Header from './src/components/Header';
 import Albumlist from './src/components/Albumlist';
 import DetailScreen from './src/components/DetailScreen';
@@ -14,11 +16,11 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
   
-<NavigationContainer >
+<NavigationContainer  ref={navigationRef}>
   <Stack.Navigator>
     
     <Stack.Screen name="mybook" component={Albumlist} options={{
-      headerLeft: () =>  <TouchableOpacity onPress={() => Linking.openURL("https://www.youtube.com/")}>
+      headerLeft: () =>  <TouchableOpacity onPress={() => navigationRef.current?.navigate("Detail")}>
       <Image style={styles.headdd} source= {require('./src/img/btn_漢堡.png')}/>
       </TouchableOpacity>,
        headerRight: () =>  <TouchableOpacity onPress={() => Linking.openURL("https://www.youtube.com/")}>
@@ -30,10 +32,22 @@ const App = () => {
       
     }}/>
     
-    <Stack.Screen name="Detail" component={DetailScreen} />
+    <Stack.Screen name="Detail" component={DetailScreen} options={{
+       headerLeft: () =>  <TouchableOpacity onPress={() => navigationRef.current?.navigate("mybook")}>
+       <Image style={styles.headdd} source= {require('./src/img/btn_漢堡.png')}/>
+       </TouchableOpacity>,
+       headerRight: () =>  <TouchableOpacity onPress={() => Linking.openURL("https://www.youtube.com/")}>
+       <Image style={styles.headd} source= {require('./src/img/btn_search.png')}/>
+       </TouchableOpacity>,
+      title:"My Book",
+      headerTintColor: '#fff',
+      headerStyle: { backgroundColor: '#00b49f' },
+      
+    }}
+     />
     
   </Stack.Navigator>
-  <Bottom/>
+  {/* <Bottom/> */}
 </NavigationContainer>
 
 
