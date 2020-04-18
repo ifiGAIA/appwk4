@@ -69,7 +69,10 @@ const MybookStackScreen = ({navigation}) => {
       activeBackgroundColor:'#fff',
       inactiveTintColor:'#818181',
       activeTintColor:'#00b49f',
-     
+      style:{height:60},
+      labelStyle:{
+          bottom:5
+      }
     }}
     
 
@@ -87,7 +90,16 @@ const MybookStackScreen = ({navigation}) => {
 
 
 const styles = StyleSheet.create({
-   
+   headdd:{
+       width:50,
+       height:50,
+       left:4
+   },
+   headd:{
+    width:50,
+    height:50,
+    right:4
+}
 });
 
 export default MybookStackScreen;

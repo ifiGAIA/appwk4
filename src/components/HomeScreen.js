@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,Image, TouchableWithoutFeedback, ScrollView,Linking,TouchableOpacity } from 'react-native';
-import GEM from '../json/album.json';
-import Header from '../components/Header';
-import { AppLoading } from 'expo';
+
 
 const DetailScreen = ({navigation}) => {
   console.log(navigation)

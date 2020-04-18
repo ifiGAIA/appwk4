@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,Image, TouchableWithoutFeedback, ScrollView,Linking,TouchableOpacity } from 'react-native';
 import GEM from '../json/album.json';
-import Header from '../components/Header';
-import { AppLoading } from 'expo';
 
 const Albumlist = ({navigation}) => {
   console.log(navigation)
@@ -207,11 +205,6 @@ const styles = StyleSheet.create({
     },
     bottomm:
     {
-      
-      // justifyContent:"center",
-      // alignItems:"center",
-      
-      // width:360,
       position:"absolute",
       flexDirection:"row",
       bottom:-60

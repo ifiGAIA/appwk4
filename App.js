@@ -12,13 +12,10 @@ import { navigationRef } from './RootNavigation';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Bottom from './src/components/Bottom';
 import Albumlist from './src/components/Albumlist';
 import HomeStackScreen from './src/screens/HomeStackScreen';
 import MybookStackScreen from './src/screens/MybookStackScreen';
-import DetailScreen from './src/components/DetailScreen';
 import albumData from "./src/json/album.json";
-import Screen from './Screen';
 
 
 

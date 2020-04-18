@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View,Image, TouchableWithoutFeedback, Button, Linking ,TouchableOpacity} from 'react-native';
-// import GEM from '../json/albums.json'
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../components/HomeScreen';
 const Stack = createStackNavigator();
