@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
       // alignItems:"center",
       
       // width:360,
-     
+      bottom:18,
       flexDirection:"row",
       
       

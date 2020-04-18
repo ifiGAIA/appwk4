@@ -4,7 +4,7 @@ import GEM from '../json/album.json';
 import Header from '../components/Header';
 import { AppLoading } from 'expo';
 
-const Albumlist = ({navigation}) => {
+const DetailScreen = ({navigation}) => {
   console.log(navigation)
   return (
     
@@ -62,78 +62,7 @@ const Albumlist = ({navigation}) => {
     </View>
    
   </View>
-  {/* <View style={styles.Gem}>
-    <View style={styles.Gem1}>
-    <Image style={styles.Gemph} source = {{uri:GEM[1].img1}}
-    />
-    <View style={styles.Gem2}>
-    <Text style={styles.gem}>{GEM[1].singer}</Text>
-    <Text style={styles.gem}>{GEM[1].song}</Text>
-    </View>
-    </View>
-    <View style={styles.gem1}>
-    <TouchableOpacity onPress={() => navigation.navigate("Detail")}>
-      <Image style={styles.Gemph1} source = {{uri:GEM[1].img2}}
-    />
-    </TouchableOpacity>
-    </View>
-  </View>
-  <View style={styles.Gem}>
-    <View style={styles.Gem1}>
-    <Image style={styles.Gemph} source = {{uri:GEM[2].img1}}
-    />
-    <View style={styles.Gem2}>
-    <Text style={styles.gem}>{GEM[2].singer}</Text>
-    <Text style={styles.gem}>{GEM[2].song}</Text>
-    </View>
-    </View>
-    <View style={styles.gem1}>
-      <Image style={styles.Gemph1} source = {{uri:GEM[2].img2}}
-    />
-    </View>
-  </View>
-  <View style={styles.Gem}>
-    <View style={styles.Gem1}>
-    <Image style={styles.Gemph} source = {{uri:GEM[3].img1}}
-    />
-    <View style={styles.Gem2}>
-    <Text style={styles.gem}>{GEM[3].singer}</Text>
-    <Text style={styles.gem}>{GEM[3].song}</Text>
-    </View>
-    </View>
-    <View style={styles.gem1}>
-      <Image style={styles.Gemph1} source = {{uri:GEM[3].img2}}
-    />
-    </View>
-  </View>
-  <View style={styles.Gem}>
-    <View style={styles.Gem1}>
-    <Image style={styles.Gemph} source = {{uri:GEM[4].img1}}
-    />
-    <View style={styles.Gem2}>
-    <Text style={styles.gem}>{GEM[4].singer}</Text>
-    <Text style={styles.gem}>{GEM[4].song}</Text>
-    </View>
-    </View>
-    <View style={styles.gem1}>
-      <Image style={styles.Gemph1} source = {{uri:GEM[4].img2}}
-    />
-    </View>
-  </View>
-  <View style={styles.Gem}>
-    <View style={styles.Gem1}>
-    <Image style={styles.Gemph} source = {{uri:GEM[5].img1}}
-    />
-    <View style={styles.Gem2}>
-    <Text style={styles.gem}>{GEM[5].singer}</Text>
-    <Text style={styles.gem}>{GEM[5].song}</Text>
-    </View>
-    </View>
-    <View style={styles.gem1}>
-      <Image style={styles.Gemph1} source = {{uri:GEM[5].img2}}
-    />
-    </View>
-  </View> */}
+  
   <View style={styles.bottomm}>
       <View style={styles.bottom}>
       <TouchableOpacity onPress={() => navigation.navigate("Detail")}>
@@ -466,4 +395,4 @@ const styles = StyleSheet.create({
     
 });
 
-export default Albumlist;
+export default DetailScreen;
